@@ -1,0 +1,8 @@
+{
+  "globals": {
+    "uri": "public/"
+  },
+  "api": {
+    "layout": false
+  }
+}

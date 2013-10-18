@@ -1,0 +1,27 @@
+table
+  thead
+    tr
+      th Rank
+      th State
+      th 2011
+      th 2009
+      th 2008
+      th 2007
+      th 2004 - 2006
+
+script#tbody(type="text/x-handlebars")
+  tbody
+    {{#each rows}}
+    tr
+      td {{rank}}
+      td {{state}}
+      td {{[2011]}}
+      td {{[2009]}}
+      td {{[2008]}}
+      td {{[2007]}}
+      td {{[2004-2006]}}
+    {{/each}}
+
+script(type="text/javascript", src="/javascripts/jquery.js")
+script(type="text/javascript", src="/javascripts/handlebars.js")
+script(type="text/javascript", src="/javascripts/income_by_state.js")

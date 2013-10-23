@@ -1,13 +1,13 @@
 @import "whitespace-reset.css"
 
 html, body
+  font: normal 18px Helvetica, Arial, sans-serif
   background: #99cc99
 
 main
-  width: 740px
+  width: 960px
   padding: 30px
   margin: 0 auto
-  font: normal 18px Helvetica, Arial, sans-serif
   color: #242424
   background: #ffffff
   box-shadow: 0 0 3px rgba(0, 0, 0, .4)
@@ -45,3 +45,34 @@ tbody
     background: #ddeedd
   tr:hover
     background: #ffff99
+
+.state
+  fill: #c7c7c7
+  stroke: #fff
+  stroke-width: 0.75
+  stroke-opacity: 1
+  &:hover
+    fill: #0077aa
+  &.active
+    fill: #cc7733
+
+.data
+  position: absolute
+  z-index: 1
+  width: 200px
+  padding: 15px
+  font-size: 13px
+  color: #f0f0f0
+  background: rgba(0, 0, 0, .7)
+  h1
+    padding: 0 0 7px 0
+    font-size: 15px
+  dl
+    line-height: 150%
+  dt
+    display: inline-block
+    padding: 0 10px 0 0
+    &:after
+      content: ":"
+  dd
+    display: inline-block

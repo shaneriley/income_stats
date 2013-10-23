@@ -1,3 +1,5 @@
+!= partial("_us_map")
+
 table
   thead
     tr
@@ -21,6 +23,16 @@ script#tbody(type="text/x-handlebars")
       td {{[2007]}}
       td {{[2004-2006]}}
     {{/each}}
+
+script#data(type="text/x-handlebars")
+  .data
+    h1 {{state}}
+    dl
+      dt Rank
+      dd {{rank}}
+    dl
+      dt Median income ({{current_year}})
+      dd {{income}}
 
 script(type="text/javascript", src="/javascripts/jquery.js")
 script(type="text/javascript", src="/javascripts/handlebars.js")
